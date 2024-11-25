@@ -1,25 +1,25 @@
 set(include_dirs
-  ${CMAKE_SOURCE_DIR}/extern
-  ${CMAKE_SOURCE_DIR}/extern/filereader
-  ${CMAKE_SOURCE_DIR}/extern/pdqsort
-  ${CMAKE_SOURCE_DIR}/extern/zstr
-  ${CMAKE_SOURCE_DIR}/src
-  ${CMAKE_SOURCE_DIR}/src/interfaces
-  ${CMAKE_SOURCE_DIR}/src/io
-  ${CMAKE_SOURCE_DIR}/src/ipm
-  ${CMAKE_SOURCE_DIR}/src/ipm/ipx
-  ${CMAKE_SOURCE_DIR}/src/ipm/basiclu
-  ${CMAKE_SOURCE_DIR}/src/lp_data
-  ${CMAKE_SOURCE_DIR}/src/mip
-  ${CMAKE_SOURCE_DIR}/src/model
-  ${CMAKE_SOURCE_DIR}/src/parallel
-  ${CMAKE_SOURCE_DIR}/src/pdlp
-  ${CMAKE_SOURCE_DIR}/src/pdlp/cupdlp
-  ${CMAKE_SOURCE_DIR}/src/presolve
-  ${CMAKE_SOURCE_DIR}/src/qpsolver
-  ${CMAKE_SOURCE_DIR}/src/simplex
-  ${CMAKE_SOURCE_DIR}/src/test
-  ${CMAKE_SOURCE_DIR}/src/util
+  ${CMAKE_CURRENT_SOURCE_DIR}/extern
+  ${CMAKE_CURRENT_SOURCE_DIR}/extern/filereader
+  ${CMAKE_CURRENT_SOURCE_DIR}/extern/pdqsort
+  ${CMAKE_CURRENT_SOURCE_DIR}/extern/zstr
+  ${CMAKE_CURRENT_SOURCE_DIR}/src
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/interfaces
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/io
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/ipm
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/ipm/ipx
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/ipm/basiclu
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/lp_data
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/mip
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/model
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/parallel
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/pdlp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/pdlp/cupdlp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/presolve
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/qpsolver
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/simplex
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/test
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/util
   $<BUILD_INTERFACE:${HIGHS_BINARY_DIR}>)
 
 set(cupdlp_sources
